@@ -46,18 +46,6 @@
   <ProjectSessionItem path="STM32F767ZG;STM32F767ZG;Source Files;app;src"/>
   <ProjectSessionItem path="STM32F767ZG;STM32F767ZG;Source Files;app;src;task"/>
   <ProjectSessionItem path="STM32F767ZG;STM32F767ZG;Source Files;yss"/>
-  <ProjectSessionItem path="STM32F767ZG;STM32F767ZG;Source Files;yss;inc"/>
-  <ProjectSessionItem path="STM32F767ZG;STM32F767ZG;Source Files;yss;inc;gui"/>
-  <ProjectSessionItem path="STM32F767ZG;STM32F767ZG;Source Files;yss;inc;yss"/>
-  <ProjectSessionItem path="STM32F767ZG;STM32F767ZG;Source Files;yss;src"/>
-  <ProjectSessionItem path="STM32F767ZG;STM32F767ZG;Source Files;yss;src;gui"/>
-  <ProjectSessionItem path="STM32F767ZG;STM32F767ZG;Source Files;yss;src;mod"/>
-  <ProjectSessionItem path="STM32F767ZG;STM32F767ZG;Source Files;yss;src;mod;ctouch"/>
-  <ProjectSessionItem path="STM32F767ZG;STM32F767ZG;Source Files;yss;src;sac"/>
-  <ProjectSessionItem path="STM32F767ZG;STM32F767ZG;Source Files;yss;src;scheduler"/>
-  <ProjectSessionItem path="STM32F767ZG;STM32F767ZG;Source Files;yss;src;std_ext"/>
-  <ProjectSessionItem path="STM32F767ZG;STM32F767ZG;Source Files;yss;src;system"/>
-  <ProjectSessionItem path="STM32F767ZG;STM32F767ZG;Source Files;yss;src;util"/>
   <ProjectSessionItem path="STM32F767ZG;STM32F767ZG;System Files"/>
  </Project>
  <Register1>
@@ -106,29 +94,7 @@
   <Watches active="0" update="Never"/>
  </Watch4>
  <Files>
-  <SessionOpenFile windowGroup="DockEditLeft" x="0" y="39" useTextEdit="1" path="app/src/main.cpp" left="0" top="39" codecName="Default"/>
-  <SessionOpenFile windowGroup="DockEditLeft" x="0" y="56" useTextEdit="1" openedFrom="/home/mymy49/library/yss_MCU_Support/STM32F746NG/app/src/task/task_handleImagePage.cpp" path="../../yss/inc/gui/Object.h" left="0" top="43" codecName="Default"/>
-  <SessionOpenFile windowGroup="DockEditLeft" x="0" y="33" useTextEdit="1" path="../../yss/src/gui/yss_ImageButton.cpp" left="0" top="0" codecName="Default"/>
-  <SessionOpenFile windowGroup="DockEditLeft" x="20" y="55" useTextEdit="1" path="../../yss/src/gui/yss_Container.cpp" left="0" top="55" codecName="Default"/>
-  <SessionOpenFile windowGroup="DockEditLeft" x="0" y="120" useTextEdit="1" path="../../yss/src/util/yss_FunctionQueue.cpp" left="0" top="106" codecName="Default"/>
-  <SessionOpenFile windowGroup="DockEditLeft" x="0" y="82" useTextEdit="1" openedFrom="/home/mymy49/library/yss_MCU_Support/STM32F746NG/app/src/bsp.cpp" path="../../yss/src/sac/sac_SdMemory.cpp" left="0" top="55" codecName="Default"/>
-  <SessionOpenFile windowGroup="DockEditLeft" x="0" y="0" useTextEdit="1" path="../../yss/src/mod/ctouch/mod_FT5336.cpp" left="0" top="85" codecName="Default"/>
-  <SessionOpenFile windowGroup="DockEditLeft" x="0" y="30" useTextEdit="1" path="app/src/bsp.cpp" left="0" top="30" codecName="Default"/>
-  <SessionOpenFile windowGroup="DockEditLeft" x="60" y="96" useTextEdit="1" openedFrom="/home/mymy49/library/yss/src/sac/sac_SdMemory.cpp" path="../../yss/inc/sac/SdMemory.h" left="0" top="79" codecName="Default"/>
-  <SessionOpenFile windowGroup="DockEditLeft" x="0" y="101" useTextEdit="1" path="../../yss/src/gui/yss_Object.cpp" left="0" top="88" codecName="Default"/>
-  <SessionOpenFile windowGroup="DockEditLeft" x="0" y="86" useTextEdit="1" path="../../../.rowley_associates_limited/CrossWorks for ARM/v4/packages/targets/STM32/STM32_Startup.s" left="0" top="72" codecName="Default"/>
-  <SessionOpenFile windowGroup="DockEditLeft" x="0" y="967" useTextEdit="1" path="../../yss/inc/cmsis/cmsis_gcc.h" left="0" top="953" codecName="Default"/>
-  <SessionOpenFile windowGroup="DockEditLeft" x="0" y="110" useTextEdit="1" path="../../yss/src/std_ext/yss_hmalloc.cpp" left="0" top="85" codecName="Default"/>
-  <SessionOpenFile windowGroup="DockEditLeft" x="0" y="576" useTextEdit="1" path="../../yss/src/scheduler/yss_scheduler.cpp" left="0" top="558" codecName="Default"/>
-  <SessionOpenFile windowGroup="DockEditLeft" x="0" y="98" useTextEdit="1" path="../../yss/src/scheduler/yss_Mutex.cpp" left="0" top="62" codecName="Default"/>
-  <SessionOpenFile windowGroup="DockEditLeft" x="1" y="48" useTextEdit="1" path="../../yss/src/system/yss_Fat32.cpp" left="0" top="27" codecName="Default"/>
-  <SessionOpenFile windowGroup="DockEditLeft" x="0" y="30" useTextEdit="1" path="app/inc/memory.h" left="0" top="10" codecName="Default"/>
-  <SessionOpenFile windowGroup="DockEditLeft" x="0" y="640" useTextEdit="1" path="../../yss/src/gui/yss_Brush.cpp" left="0" top="624" codecName="Default"/>
-  <SessionOpenFile windowGroup="DockEditLeft" x="0" y="274" useTextEdit="1" path="../../yss/src/gui/yss_Painter.cpp" left="0" top="254" codecName="Default"/>
-  <SessionOpenFile windowGroup="DockEditLeft" x="67" y="15" useTextEdit="1" path="app/inc/bsp.h" left="0" top="2" codecName="Default"/>
-  <SessionOpenFile windowGroup="DockEditLeft" x="0" y="184" useTextEdit="1" openedFrom="/home/mymy49/library/yss_MCU_Support/STM32F746NG/app/src/task/task_handleImagePage.cpp" path="../../yss/src/system/yss_Directory.cpp" left="0" top="163" codecName="Default"/>
-  <SessionOpenFile windowGroup="DockEditLeft" x="0" y="126" useTextEdit="1" openedFrom="/home/mymy49/library/yss_MCU_Support/STM32F746NG/app/src/task/task_handleImagePage.cpp" path="../../yss/src/gui/yss_Frame.cpp" left="0" top="114" codecName="Default"/>
-  <SessionOpenFile windowGroup="DockEditLeft" x="8" y="70" useTextEdit="1" openedFrom="/home/mymy49/library/yss_MCU_Support/STM32F746NG/app/src/task/task_handleImagePage.cpp" path="../../yss/inc/yss/Fat32.h" left="0" selected="1" top="56" codecName="Default"/>
+  <SessionOpenFile windowGroup="DockEditLeft" x="0" y="44" useTextEdit="1" path="app/src/main.cpp" left="0" selected="1" top="39" codecName="Default"/>
  </Files>
- <ARMCrossStudioWindow activeProject="STM32F746NG" fileDialogDefaultFilter="*.c" autoConnectTarget="SEGGER J-Link" buildConfiguration="THUMB Debug" sessionSettings="" debugSearchFileMap="" fileDialogInitialDirectory="" debugSearchPath="" autoConnectCapabilities="3711"/>
+ <ARMCrossStudioWindow activeProject="STM32F767ZG" fileDialogDefaultFilter="*.c" autoConnectTarget="SEGGER J-Link" buildConfiguration="THUMB Debug" sessionSettings="" debugSearchFileMap="" fileDialogInitialDirectory="" debugSearchPath="" autoConnectCapabilities="3711"/>
 </session>
