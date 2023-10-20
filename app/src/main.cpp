@@ -23,7 +23,6 @@
 
 #include <yss.h>
 #include <bsp.h>
-#include "memory.h"
 
 int main(void)
 {
@@ -32,9 +31,6 @@ int main(void)
 	
 	// 보드 초기화
 	initializeBoard();
-
-	// 설정 저장용 메모리 초기화
-	Memory::initilize();
 
 	while(1)
 	{
