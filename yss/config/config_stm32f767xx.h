@@ -179,6 +179,8 @@
 #define UART4_ENABLE		false
 #define UART5_ENABLE		false
 #define USART6_ENABLE		false
+#define UART7_ENABLE		false
+#define UART8_ENABLE		false
 
 #endif
 
