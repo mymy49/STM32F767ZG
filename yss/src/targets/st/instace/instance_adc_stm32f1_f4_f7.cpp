@@ -25,7 +25,7 @@
 
 #include <yss/instance.h>
 
-#if defined(STM32F4_N) || defined(STM32F7_N) || defined(STM32F1_N)
+#if defined(STM32F4) || defined(STM32F7) || defined(STM32F1)
 
 #include <config.h>
 #include <yss.h>
@@ -62,11 +62,6 @@
 #endif
 
 #if ADC1_ENABLE || ADC2_ENABLE || ADC3_ENABLE
-static uint32_t getApb1ClockFrequency(void)
-{
-	return clock.getApb1ClockFrequency();
-}
-
 static uint32_t getApb2ClockFrequency(void)
 {
 	return clock.getApb2ClockFrequency();
@@ -91,7 +86,7 @@ static void enableInterruptAdc1(bool en)
 static void resetAdc1(void)
 {
 	clock.lock();
-#if defined(STM32F7_N)
+#if defined(STM32F7)
     clock.resetApb2(RCC_APB2RSTR_ADCRST_Pos);
 #endif
 	clock.unlock();
@@ -131,7 +126,7 @@ void enableInterruptAdc2(bool en)
 static void resetAdc2(void)
 {
 	clock.lock();
-#if defined(GD32F1) || defined(STM32F1_N)
+#if defined(GD32F1) || defined(STM32F1)
     clock.resetApb2(RCC_APB2RSTR_ADC2RST_Pos);
 #elif defined(STM32F7)
     clock.resetApb2(RCC_APB2RSTR_ADCRST_Pos);
@@ -197,7 +192,7 @@ Adc adc3(gDrvAdc3Setup, gAdc3Setup);
 
 extern "C"
 {
-#if (defined(STM32F4_N) || defined(STM32F7_N)) && ((ADC1_ENABLE && defined(ADC1)) || (ADC2_ENABLE && defined(ADC2)) || (ADC3_ENABLE && defined(ADC3)))
+#if (defined(STM32F4) || defined(STM32F7)) && ((ADC1_ENABLE && defined(ADC1)) || (ADC2_ENABLE && defined(ADC2)) || (ADC3_ENABLE && defined(ADC3)))
 	void ADC_IRQHandler(void)
 	{
 #if ADC1_ENABLE && defined(ADC1)
@@ -222,7 +217,7 @@ extern "C"
 		}
 #endif
 	}
-#elif (defined(STM32F1_N)) && ((ADC1_ENABLE && defined(ADC1)) || (ADC2_ENABLE && defined(ADC2)) || (ADC3_ENABLE && defined(ADC3)))
+#elif (defined(STM32F1)) && ((ADC1_ENABLE && defined(ADC1)) || (ADC2_ENABLE && defined(ADC2)) || (ADC3_ENABLE && defined(ADC3)))
 	void ADC_IRQHandler(void)
 	{
 #if ADC1_ENABLE && defined(ADC1)
