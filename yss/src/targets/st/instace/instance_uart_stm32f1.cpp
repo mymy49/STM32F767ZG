@@ -92,7 +92,7 @@ static const Dma::DmaInfo gUart1TxDmaInfo =
 	(void*)&USART1->DR									//void *dataRegister;
 };
 
-static const Uart::Setup gUart1Setup = 
+static const Uart::Setup_t gUart1Setup = 
 {
 	(YSS_USART_Peri*)USART1,	//YSS_SPI_Peri *peri;
 	dmaChannel4,				//Dma &txDma;
@@ -155,7 +155,7 @@ static const Dma::DmaInfo gUart2TxDmaInfo =
 	(void*)&USART2->DR									//void *dataRegister;
 };
 
-static const Uart::Setup gUart2Setup = 
+static const Uart::Setup_t gUart2Setup = 
 {
 	(YSS_USART_Peri*)USART2,	//YSS_SPI_Peri *peri;
 	dmaChannel7,				//Dma &txDma;
@@ -219,7 +219,7 @@ static const Dma::DmaInfo gUart3TxDmaInfo =
 	(void*)&USART3->DR,									//void *dataRegister;
 };
 
-static const Uart::Setup gUart3Setup = 
+static const Uart::Setup_t gUart3Setup = 
 {
 	(YSS_USART_Peri*)USART3,	//YSS_SPI_Peri *peri;
 	dmaChannel2,				//Dma &txDma;
@@ -283,7 +283,7 @@ static const Dma::DmaInfo gUart4TxDmaInfo =
 	(void*)&UART4->DR	//void *dataRegister;
 };
 
-static const Uart::Setup gUart4Setup
+static const Uart::Setup_t gUart4Setup
 {
 	UART4,			//YSS_SPI_Peri *peri;
 	dmaChannel12,	//Dma &txDma;

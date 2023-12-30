@@ -28,17 +28,15 @@
 
 #include "peripheral.h"
 
-#if defined(STM32F1) || defined(STM32L0)
-
-#define MAX_EP_NUM 8
-
-#elif defined(STM32F7)
+#if defined(STM32F7)
 
 #define MAX_EP_NUM 8
 typedef USB_OTG_GlobalTypeDef		YSS_USB_TypeDef;
 
 #else
 
+#include <stdint.h>
+typedef volatile uint32_t			YSS_USB_TypeDef;
 #define YSS_DRV_USBD_UNSUPPORTED
 
 #endif

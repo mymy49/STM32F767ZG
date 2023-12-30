@@ -97,7 +97,7 @@ static const Dma::DmaInfo gI2c1RxDmaInfo =
 	(void*)&I2C1->RXDR,		//void *dataRegister;
 };
 
-static const I2c::Setup gI2c1Setup
+static const I2c::Setup_t gI2c1Setup
 {
 	I2C1,			//YSS_I2C_Peri *peri;
 	dmaChannel2,	//Dma &txDma;
@@ -169,7 +169,7 @@ static const Dma::DmaInfo gI2c2RxDmaInfo =
 	(void*)&I2C2->RXDR,		//void *dataRegister;
 };
 
-static const I2c::Setup gI2c2Setup
+static const I2c::Setup_t gI2c2Setup
 {
 	I2C2,			//YSS_I2C_Peri *peri;
 	dmaChannel4,	//Dma &txDma;

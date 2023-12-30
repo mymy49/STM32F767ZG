@@ -65,7 +65,7 @@ const Drv::Setup_t gDrvDmaChannel1Setup =
 	0								//uint32_t (*getClockFunc)(void);
 };
 
-const Dma::Setup gDma1Setup = 
+const Dma::Setup_t gDma1Setup = 
 {
 	DMA1,			//YSS_DMA_Peri *dma;
 	DMA1_Channel1	//YSS_DMA_Channel_Peri *peri;	
@@ -100,7 +100,7 @@ const Drv::Setup_t gDrvDmaChannel2Setup =
 	0								//uint32_t (*getClockFunc)(void);
 };
 
-const Dma::Setup gDma2Setup = 
+const Dma::Setup_t gDma2Setup = 
 {
 	DMA1,	//YSS_DMA_Peri *dma;
 	DMA1_Channel2	//YSS_DMA_Channel_Peri *peri;	
@@ -135,7 +135,7 @@ const Drv::Setup_t gDrvDmaChannel3Setup =
 	0								//uint32_t (*getClockFunc)(void);
 };
 
-const Dma::Setup gDma3Setup = 
+const Dma::Setup_t gDma3Setup = 
 {
 	DMA1,			//YSS_DMA_Peri *dma;
 	DMA1_Channel3	//YSS_DMA_Channel_Peri *peri;	
@@ -170,7 +170,7 @@ const Drv::Setup_t gDrvDmaChannel4Setup =
 	0								//uint32_t (*getClockFunc)(void);
 };
 
-const Dma::Setup gDma4Setup = 
+const Dma::Setup_t gDma4Setup = 
 {
 	DMA1,	//YSS_DMA_Peri *dma;
 	DMA1_Channel4	//YSS_DMA_Channel_Peri *peri;	
@@ -205,7 +205,7 @@ const Drv::Setup_t gDrvDmaChannel5Setup =
 	0								//uint32_t (*getClockFunc)(void);
 };
 
-const Dma::Setup gDma5Setup = 
+const Dma::Setup_t gDma5Setup = 
 {
 	DMA1,	//YSS_DMA_Peri *dma;
 	DMA1_Channel5	//YSS_DMA_Channel_Peri *peri;	
@@ -240,7 +240,7 @@ const Drv::Setup_t gDrvDmaChannel6Setup =
 	0								//uint32_t (*getClockFunc)(void);
 };
 
-const Dma::Setup gDma6Setup = 
+const Dma::Setup_t gDma6Setup = 
 {
 	DMA1,	//YSS_DMA_Peri *dma;
 	DMA1_Channel6	//YSS_DMA_Channel_Peri *peri;	
@@ -275,7 +275,7 @@ const Drv::Setup_t gDrvDmaChannel7Setup =
 	0								//uint32_t (*getClockFunc)(void);
 };
 
-const Dma::Setup gDma7Setup = 
+const Dma::Setup_t gDma7Setup = 
 {
 	DMA1,	//YSS_DMA_Peri *dma;
 	DMA1_Channel7	//YSS_DMA_Channel_Peri *peri;	
@@ -317,17 +317,13 @@ const Drv::Setup_t gDrvDmaChannel8Config =
 	0								//uint32_t (*getClockFunc)(void);
 };
 
-const Dma::Setup gDma8Config = 
+const Dma::Setup_t gDma8Config = 
 {
 	DMA2,			//YSS_DMA_Peri *dma;
 	DMA2_Channel1	//YSS_DMA_Channel_Peri *peri;	
 };
 
-const DmaChannel8::Config gDmaChannel8 = 
-{
-};
-
-DmaChannel8 dmaChannel8(gDrvDmaChannel8Config, gDma8Config, gDmaChannel8);
+DmaChannel8 dmaChannel8(gDrvDmaChannel8Config, gDma8Config);
 
 extern "C"
 {
@@ -356,17 +352,13 @@ const Drv::Setup_t gDrvDmaChannel9Config =
 	0								//uint32_t (*getClockFunc)(void);
 };
 
-const Dma::Setup gDma9Config = 
+const Dma::Setup_t gDma9Config = 
 {
 	DMA2,			//YSS_DMA_Peri *dma;
 	DMA2_Channel2	//YSS_DMA_Channel_Peri *peri;	
 };
 
-const DmaChannel9::Config gDmaChannel9 = 
-{
-};
-
-DmaChannel9 dmaChannel9(gDrvDmaChannel9Config, gDma9Config, gDmaChannel9);
+DmaChannel9 dmaChannel9(gDrvDmaChannel9Config, gDma9Config);
 
 extern "C"
 {
@@ -395,17 +387,13 @@ const Drv::Setup_t gDrvDmaChannel10Config =
 	0								//uint32_t (*getClockFunc)(void);
 };
 
-const Dma::Setup gDma10Config = 
+const Dma::Setup_t gDma10Config = 
 {
 	DMA2,			//YSS_DMA_Peri *dma;
 	DMA2_Channel3	//YSS_DMA_Channel_Peri *peri;	
 };
 
-const DmaChannel10::Config gDmaChannel10 = 
-{
-};
-
-DmaChannel10 dmaChannel10(gDrvDmaChannel10Config, gDma10Config, gDmaChannel10);
+DmaChannel10 dmaChannel10(gDrvDmaChannel10Config, gDma10Config);
 
 extern "C"
 {
@@ -434,17 +422,13 @@ const Drv::Setup_t gDrvDmaChannel11Config =
 	0								//uint32_t (*getClockFunc)(void);
 };
 
-const Dma::Setup gDma11Config = 
+const Dma::Setup_t gDma11Config = 
 {
 	DMA2,			//YSS_DMA_Peri *dma;
 	DMA2_Channel4	//YSS_DMA_Channel_Peri *peri;	
 };
 
-const DmaChannel11::Config gDmaChannel11 = 
-{
-};
-
-DmaChannel11 dmaChannel11(gDrvDmaChannel11Config, gDma11Config, gDmaChannel11);
+DmaChannel11 dmaChannel11(gDrvDmaChannel11Config, gDma11Config);
 
 #endif
 
@@ -466,17 +450,13 @@ const Drv::Setup_t gDrvDmaChannel12Config =
 	0								//uint32_t (*getClockFunc)(void);
 };
 
-const Dma::Setup gDma12Config = 
+const Dma::Setup_t gDma12Config = 
 {
 	DMA2,			//YSS_DMA_Peri *dma;
 	DMA2_Channel5	//YSS_DMA_Channel_Peri *peri;	
 };
 
-const DmaChannel12::Config gDmaChannel12 = 
-{
-};
-
-DmaChannel12 dmaChannel12(gDrvDmaChannel12Config, gDma12Config, gDmaChannel12);
+DmaChannel12 dmaChannel12(gDrvDmaChannel12Config, gDma12Config);
 
 extern "C"
 {

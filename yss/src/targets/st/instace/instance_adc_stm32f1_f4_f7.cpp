@@ -31,28 +31,28 @@
 #include <yss.h>
 #include <yss/reg.h>
 
+#include <targets/st/bitfield.h>
+
 #if defined(STM32F446xx)
-#include <targets/st/bitfield_stm32f446xx.h>
 #define ADC1_IRQn		ADC_IRQn
 #define ADC2_IRQn		ADC_IRQn
 #define ADC3_IRQn		ADC_IRQn
 #elif defined(STM32F429xx)
-#include <targets/st/bitfield_stm32f429xx.h>
 #define ADC1_IRQn		ADC_IRQn
 #define ADC2_IRQn		ADC_IRQn
 #define ADC3_IRQn		ADC_IRQn
 #elif defined(STM32F746xx)
-#include <targets/st/bitfield_stm32f746xx.h>
 #define ADC1_IRQn		ADC_IRQn
 #define ADC2_IRQn		ADC_IRQn
 #define ADC3_IRQn		ADC_IRQn
 #elif defined(STM32F767xx)
-#include <targets/st/bitfield_stm32f767xx.h>
 #define ADC1_IRQn		ADC_IRQn
 #define ADC2_IRQn		ADC_IRQn
 #define ADC3_IRQn		ADC_IRQn
 #elif defined(STM32F103xB)
-#include <targets/st/bitfield_stm32f103xx.h>
+#define ADC1_IRQn		ADC1_2_IRQn
+#define ADC2_IRQn		ADC1_2_IRQn
+#elif defined(STM32F103xE)
 #define ADC1_IRQn		ADC1_2_IRQn
 #define ADC2_IRQn		ADC1_2_IRQn
 #endif
