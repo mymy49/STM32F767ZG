@@ -59,7 +59,7 @@ static void resetI2c1(void)
 	clock.unlock();
 }
 
-static const Drv::Setup gDrvI2c1Setup
+static const Drv::Setup_t gDrvI2c1Setup
 {
 	setI2c1ClockEn,		//void (*clockFunc)(bool en);
 	0,					//void (*nvicFunc)(bool en);
@@ -131,7 +131,7 @@ static void resetI2c2(void)
 	clock.unlock();
 }
 
-static const Drv::Setup gDrvI2c2Setup
+static const Drv::Setup_t gDrvI2c2Setup
 {
 	setI2c2ClockEn,		//void (*clockFunc)(bool en);
 	0,					//void (*nvicFunc)(bool en);

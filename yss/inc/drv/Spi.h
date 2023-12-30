@@ -74,7 +74,7 @@ class Spi : public Drv
 
 	// SPI 장치의 전송 세부 사항을 설정한다. 
 	// 설정 전에 반드시 enable(false) 를 호출하여 장치를 먼저 비활성화 시키는게 필요하다.
-	// 세부 설정 사항은 구조체 Specification를 사용한다.
+	// 세부 설정 사항은 구조체 Specification_t를 사용한다.
 	// 
 	// 반환
 	//		에러를 반환한다.
@@ -152,7 +152,7 @@ class Spi : public Drv
 	// 인터럽트 벡터에서 호출되는 함수이다.
 	// 사용자 임의의 호출은 금지한다.
 #if defined(GD32F1) || defined(STM32F1) || defined(GD32F4)  || defined(STM32F7) || defined(STM32F0) || defined(STM32F4)
-	struct Setup
+	struct Setup_t
 	{
 		YSS_SPI_Peri *dev;
 		Dma &txDma;
@@ -161,7 +161,7 @@ class Spi : public Drv
 		Dma::DmaInfo rxDmaInfo;
 	};
 #elif defined(EFM32PG22)
-	struct Setup
+	struct Setup_t
 	{
 		YSS_SPI_Peri *dev;
 		Dma **dmaChannelList;
@@ -170,7 +170,7 @@ class Spi : public Drv
 	};
 #endif
 
-	Spi(const Drv::Setup drvSetup, const Setup setup);
+	Spi(const Drv::Setup_t drvSetup, const Setup_t setup);
 
 	void isr(void);
 
